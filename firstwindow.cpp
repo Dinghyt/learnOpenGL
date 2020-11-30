@@ -76,15 +76,7 @@ int main()
 		glfwPollEvents();//检查有没有触发什么事件（比如键盘输入、鼠标移动等）、更新窗口状态，并调用对应的回调函数（可以通过回调方法手动设置）。
 	}
 
-	// optional: de-allocate all resources once they've outlived their purpose:
-	// ------------------------------------------------------------------------
-	glDeleteVertexArrays(2, VAOs);
-	glDeleteVertexArrays(1, VAO3);
-	glDeleteBuffers(2, VBOs);
-	glDeleteBuffers(1, VBO3);
-	glDeleteBuffers(1, &EBO);
-	glDeleteProgram(shaderProgram);
-	glDeleteProgram(shaderProgram2);
+
 	// glfw: terminate, clearing all previously allocated GLFW resources.
 	// ------------------------------------------------------------------
 	glfwTerminate();
